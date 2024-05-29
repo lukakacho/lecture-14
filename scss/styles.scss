@@ -1,0 +1,234 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "placeholders";
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 15px 0;
+  margin: 0 100px;
+  height: 84px;
+}
+
+.div {
+  @include flex(flex, space-between, center);
+  @include text(17px, 400px, $text-color1);
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.owl {
+  height: 42px;
+  width: 33px;
+  @media only screen and (max-width: 800px) {
+       width: 20px;
+       height: 25px;
+  }
+}
+
+.div1 p:hover {
+  color: #220a8b;
+  cursor: pointer;
+}
+
+.div1 {
+  display: flex;
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.fa-bars {
+  display: none !important;
+  @media only screen and (max-width: 900px) {
+    display: block !important;
+  }
+}
+
+p {
+  margin-right: 52px;
+  @media only screen and (max-width: 1000px) {
+    font-size: 14px;
+  }
+}
+
+h2 {
+  @media only screen and (max-width: 1000px) {
+    font-size: 14px;
+  }
+}
+
+.p {
+  margin-right: 52px;
+}
+
+.p2 {
+  margin-right: 78px;
+}
+
+.section {
+  @include flex(flex, center, center);
+  position: relative;
+}
+
+.inscription {
+  @include flex(flex, center, center);
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+
+.banner {
+  background-image: url("../images/city.jpg");
+  height: 606px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.discover {
+  @include text(79px, 700px, $text-color2);
+  margin-bottom: 30px;
+  margin-right: 0%;
+  @media only screen and (max-width: 1400px) {
+    font-size: 65px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 55px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 40px;
+  }
+}
+
+.travel {
+  @include text(19px, 400px, $text-color2);
+  @media only screen and (max-width: 1400px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 14px;
+  }
+}
+
+section {
+  margin-top: 84px;
+}
+
+.line1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 98px;
+  @media only screen and (max-width: 1400px) {
+    width: 286px;
+    flex-direction: column;
+    margin-right: 0%;
+    margin-left: 30px;
+  }
+  @media only screen and (max-width: 700px) {
+    margin-left: 0%;
+  }
+}
+
+.section1 {
+  @include size(235px, 213px);
+  margin-right: 50px;
+}
+
+.photo-text {
+  @include text(17px, 400px, $text-color1);
+  line-height: 19.55px;
+}
+
+.photo-text1 {
+  @include text(28px, 400px, $text-color3);
+  margin-top: 9px;
+  line-height: 32.2px;
+}
+
+.photo-text2 {
+  @include text(20px, 400px, $text-color1);
+  margin-top: 37px;
+  line-height: 23px;
+}
+
+.line2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 56px;
+  margin-right: 98px;
+  @media only screen and (max-width: 1400px) {
+    flex-direction: column;
+    width: 286px;
+    margin-right: 30px;
+    margin-top: 0%;
+   margin-left: 40px;
+  }
+  @media only screen and (max-width: 700px) {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.text {
+  font-size: 19px;
+  font-weight: 400px;
+  margin-top: 23px;
+  color: #343232;
+}
+
+.text1 {
+  font-size: 18px;
+  font-weight: 400px;
+  color: #636060;
+  margin-top: 9px;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7 {
+  margin-left: 33px;
+  @media only screen and (max-width: 1400px) {
+    margin-bottom: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7 {
+  height: 312px;
+  width: 286px;
+}
+
+.cards {
+  @media only screen and (max-width: 1400px) {
+    display: flex;
+  justify-content: center;
+  }
+  @media only screen and (max-width: 700px) {
+flex-direction: column;
+align-items: center;
+  }
+}
